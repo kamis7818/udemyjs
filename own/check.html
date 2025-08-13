@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+ <script type="text/javascript">
+
+     function check()
+     {
+        var amount = document.getElementById("field").value; // uchwyt elementu input
+        if (amount > 0) document.getElementById("result").innerHTML = "Positive"                         // swap document.write with innerHTML
+        else if (amount === 0) document.getElementById("result").innerHTML = "Your amount is zero"
+        else if (amount < 0) document.getElementById("result").innerHTML = "Negative"
+        else document.getElementById("result").innerHTML = "Invalid input, please enter a number";
+
+     }
+
+
+ </script>
+
+</head>
+<body>
+<input type="text" id="field"/>
+<input type ="submit" value="Check" onclick="check()" />
+
+<div id="result"></div>
+</body>
+</html>
